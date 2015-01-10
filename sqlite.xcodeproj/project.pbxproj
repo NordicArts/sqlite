@@ -6,8 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F38EEDB11A61903E00F9DBC1 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = F38EEDAE1A61903E00F9DBC1 /* sqlite3.c */; };
+		F38EEDB21A61903E00F9DBC1 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = F38EEDAF1A61903E00F9DBC1 /* sqlite3.h */; };
+		F38EEDB31A61903E00F9DBC1 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = F38EEDB01A61903E00F9DBC1 /* sqlite3ext.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F38EEDA71A618F7700F9DBC1 /* libsqlite.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsqlite.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38EEDAE1A61903E00F9DBC1 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		F38EEDAF1A61903E00F9DBC1 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		F38EEDB01A61903E00F9DBC1 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +33,9 @@
 		F38EED9E1A618F7700F9DBC1 = {
 			isa = PBXGroup;
 			children = (
+				F38EEDAE1A61903E00F9DBC1 /* sqlite3.c */,
+				F38EEDAF1A61903E00F9DBC1 /* sqlite3.h */,
+				F38EEDB01A61903E00F9DBC1 /* sqlite3ext.h */,
 				F38EEDA81A618F7700F9DBC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +55,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38EEDB31A61903E00F9DBC1 /* sqlite3ext.h in Headers */,
+				F38EEDB21A61903E00F9DBC1 /* sqlite3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38EEDB11A61903E00F9DBC1 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
