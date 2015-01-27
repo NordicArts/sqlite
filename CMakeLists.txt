@@ -23,10 +23,6 @@ add_library(SQLite SHARED ${Lib_Source} ${Lib_Headers})
 set_target_properties(SQLite PROPERTIES LINKER_LANGUAGE C)
 set_target_properties(SQLite PROPERTIES OUTPUT_NAME "SQLite")
 
-# Boost
-find_package(Boost COMPONENTS locale REQUIRED)
-include_directories(${Boost_INCLUDES})
-
 # Linker
 if (WIN32)
     target_link_libraries(SQLite winmm gdi32 c++abi)
@@ -36,4 +32,3 @@ elseif (UNIX)
     target_link_libraries(SQLite c++abi)
 endif()
 
-target_link_libraries(SQLite ${Boost_LOCALE_LIBRARY})
