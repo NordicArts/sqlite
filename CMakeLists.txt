@@ -25,7 +25,7 @@ set_target_properties(SQLite PROPERTIES OUTPUT_NAME "SQLite")
 
 # Linker
 if (WIN32)
-    target_link_libraries(SQLite winmm gdi32 c++abi)
+    target_link_libraries(SQLite winmm gdi32)
 elseif (APPLE)
     target_link_libraries(SQLite "-framework Foundation -framework IOKit -framework Carbon -framework CoreFoundation" c++abi)
 elseif (UNIX)
